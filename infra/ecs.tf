@@ -142,6 +142,7 @@ resource "aws_ecs_cluster" "main" {
   }
 }
 
+# Creating namespcae
 resource "aws_service_discovery_http_namespace" "main" {
   name        = "${var.environment}-${var.app_name}-namespace"
   description = "Dev name space"
